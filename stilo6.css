@@ -1,0 +1,50 @@
+/*diseño flexible*/
+*{
+    box-sizing: border-box;
+}
+.contenedor {
+display: flex;
+/*flex-direction: column;*/
+/*flex-direction: row;*/
+/*flex-direction: row-reverse;*/
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+p{
+ margin: 5px;
+ padding: 20px;
+}
+.contenedor nav a{
+    text-decoration: none;
+}
+.contenedor nav a:hover{
+    color: indigo;
+}
+.contenedor nav ul li{
+    display: inline;
+    padding-right: 15px;
+}
+.contenedor .cabecera{
+    padding-top: 100px;
+    min-height: 450px;
+    background-image: url(../Imagenes/Banner\ halo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aquamarine;
+    font-size: 1.8em;
+}
+.contenedor, .izq, .derec, .main{
+    border-bottom: 1px rgba(6, 255, 43, 0.955) solid;
+    margin: 2px;
+}
+/*Aplicar una regla para que el contnido se adopte al dispositivo (media quarry)*/
+
+@media (max-width: 600px){
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
